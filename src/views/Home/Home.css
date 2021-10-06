@@ -1,0 +1,262 @@
+/* general */
+
+.card {
+  border: 0px;
+  border-radius: 0;
+}
+
+.card-img-top {
+  border-radius: 0;
+}
+
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
+}
+
+.btn-primary,
+.btn-primary:disabled {
+  background-color: #333333;
+  border-color: #333333;
+  color: #ffffff;
+  border-radius: 0;
+}
+
+.btn-primary:disabled {
+  cursor: not-allowed;
+}
+
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:active:focus {
+  background-color: #f17e0a !important;
+  border-color: #f17e0a !important;
+  color: #ffffff !important;
+}
+
+.form-control {
+  border-radius: 0rem;
+}
+
+/* banner section */
+
+.main-banner-container {
+  max-height: 500px;
+}
+
+.main-banner-content {
+  padding: 2rem;
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.main-banner-text {
+  align-self: center;
+}
+
+.main-banner-title {
+  font-weight: 500;
+  color: #f17e0a !important;
+}
+
+.main-banner-image {
+  height: inherit;
+  justify-self: end;
+}
+
+/* filler section */
+.filler-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+}
+
+.filler-card {
+  align-items: center;
+  padding: 1.25rem 2rem;
+}
+
+.filler-icon {
+  height: 60px;
+}
+.filler-title {
+  font-weight: bold;
+}
+
+/* item banners section*/
+.item-banners {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+}
+
+.item-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.item-content {
+  align-self: center;
+}
+
+.item-banner-title {
+  color: #f17e0a;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.banner-image {
+  height: 200px;
+  width: 250px;
+  justify-self: end;
+}
+
+.filler-banner-image {
+  height: 200px;
+  width: 300px;
+  justify-self: end;
+}
+
+/* newsletter section */
+.newsletter-contaner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f6f7fb;
+  padding: 40px 20px;
+}
+
+.input-contaner {
+  width: 500px;
+}
+
+@media (max-width: 768px) and (min-width: 567px) {
+  /* filler section */
+  .filler-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  /* deals section */
+  .deals-image {
+    height: 250px;
+  }
+
+  .deals-text {
+    padding: 1rem 1rem;
+    text-align: center;
+  }
+
+  .deals-text .text {
+    text-align: justify;
+  }
+
+  /* products section */
+  .products-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  /* banner section */
+  .main-banner-container {
+    max-height: auto;
+  }
+  .main-banner-content {
+    display: block;
+  }
+
+  .main-banner-title {
+    font-size: 3rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .main-banner-image {
+    display: none;
+  }
+
+  /* item banners section */
+  .item-banner-title {
+    font-size: 0.8rem;
+  }
+
+  .item-container h4 {
+    font-size: 1rem;
+  }
+
+  .banner-image {
+    height: 150px;
+  }
+
+  /* deals section */
+  .deals-content {
+    height: auto;
+  }
+
+  .deals-title {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+  /* banner section */
+  .main-banner-image {
+    height: auto;
+    max-width: 200%;
+    justify-self: center;
+    align-self: center;
+  }
+  .main-banner-title {
+    font-size: 2rem;
+  }
+  /* sellout section */
+  .filler-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  /* item banners section*/
+  .banner-image {
+    height: 150px;
+  }
+
+  .item-banner-title {
+    font-size: 0.8rem;
+  }
+
+  .item-container h4 {
+    font-size: 0.9rem;
+  }
+
+  /* deals section */
+  .deals-text {
+    padding: 0 1rem;
+  }
+  .deals-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 993px) {
+  /* item banners section*/
+  .banner-image {
+    height: 250px;
+  }
+
+  /* products section */
+  .products-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
