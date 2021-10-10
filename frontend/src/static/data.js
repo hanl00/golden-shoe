@@ -35,13 +35,13 @@ let data = {
       id: 1,
       name: "standard",
       duration: "24 - 72 hours",
-      cost: 300,
+      cost: 1,
     },
     {
       id: 2,
       name: "fastest",
       duration: "1 - 24 hours",
-      cost: 1000,
+      cost: 10,
     },
   ],
   productMaxShowModal: false,
@@ -56,7 +56,7 @@ let data = {
   products: [
     {
       id: 1,
-      name: "Hiking boot",
+      name: "Men's Hiking boots",
       slug: "mens-hiking-boot-12301293",
       price: 175,
       discount_price: 200,
@@ -78,7 +78,7 @@ let data = {
     },
     {
       id: 2,
-      name: "Flip Flop",
+      name: "Men's Flip Flop",
       slug: "mens-flip-flop-29304",
       price: 75,
       category: "men",
@@ -99,7 +99,7 @@ let data = {
     },
     {
       id: 3,
-      name: "Leather Shoe",
+      name: "Men's Leather Shoe",
       slug: "mens-leather-shoe-12993",
       price: 650,
       discount_price: 999,
@@ -121,7 +121,7 @@ let data = {
     },
     {
       id: 4,
-      name: "Sandal",
+      name: "Men's Sandal",
       slug: "mens-sandal-2399",
       price: 86,
       category: "men",
@@ -142,7 +142,7 @@ let data = {
     },
     {
       id: 5,
-      name: "Golf shoe",
+      name: "Men's Golf shoe",
       slug: "mens-golf-shoe-459123",
       price: 432,
       discount_price: 782,
@@ -164,7 +164,7 @@ let data = {
     },
     {
       id: 6,
-      name: "High heels",
+      name: "Women's High heels",
       slug: "womens-high-heels-656623",
       price: 888,
       category: "women",
@@ -185,7 +185,7 @@ let data = {
     },
     {
       id: 7,
-      name: "Sandal",
+      name: "Women's Sandal",
       slug: "womens-sandal-48888",
       price: 125,
       category: "women",
@@ -206,7 +206,7 @@ let data = {
     },
     {
       id: 8,
-      name: "Sneaker",
+      name: "Women's Sneaker",
       slug: "womens-sneaker-103948",
       price: 499,
       discount_price: 599,
@@ -228,7 +228,7 @@ let data = {
     },
     {
       id: 9,
-      name: "Running shoe",
+      name: "Women's Running shoe",
       slug: "womens-running-shoe-234088",
       price: 271,
       discount_price: 837,

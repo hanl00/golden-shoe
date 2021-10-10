@@ -5,6 +5,9 @@ import ProductDetails from "./ProductDetails/ProductDetails";
 import Sale from "./Sale";
 import Cart from "./Cart";
 import Checkout from "./Checkout";
+import Faq from "./Faq";
+import Returns from "./Returns";
+import Delivery from "./Delivery";
 
 export const HomePage = Home;
 export const AllPage = All;
@@ -13,3 +16,6 @@ export const ProductDetailsPage = ProductDetails;
 export const SalesPage = Sale;
 export const CartPage = Cart;
 export const CheckoutPage = Checkout;
+export const FaqPage = Faq;
+export const ReturnsPage = Returns;
+export const DeliveryPage = Delivery;

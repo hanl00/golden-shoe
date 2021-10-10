@@ -41,6 +41,10 @@ input.success {
   margin-bottom: 10px;
 }
 
+.page-header {
+  padding-bottom: 1rem;
+}
+
 /* ------------- breadCrumbs --------------*/
 
 .breadcrumb {

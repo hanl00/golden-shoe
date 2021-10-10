@@ -28,6 +28,9 @@ class App extends Component {
             <Route path={"/sale"} component={Maincontainers.SalesPage} />
             <Route path={"/cart"} component={Maincontainers.CartPage} />
             <Route path={"/checkout"} component={Maincontainers.CheckoutPage} />
+            <Route path={"/faq"} component={Maincontainers.FaqPage}/>
+            <Route path={"/returns"} component={Maincontainers.ReturnsPage}/>
+            <Route path={"/delivery"} component={Maincontainers.DeliveryPage}/>
             <Route
               path={"/product/:productSlug"}
               render={(props) => (

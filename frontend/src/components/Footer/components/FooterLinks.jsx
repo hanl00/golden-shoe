@@ -34,7 +34,7 @@ const FooterLinks = () => {
             <NavLink to="/">Terms and Conditions</NavLink>
           </li>
           <li>
-            <NavLink to="/">FAQ</NavLink>
+            <NavLink to="/faq">FAQ</NavLink>
           </li>
         </ul>
       </div>
@@ -48,10 +48,10 @@ const FooterLinks = () => {
             <NavLink to="/">Money back</NavLink>
           </li>
           <li>
-            <NavLink to="/">Returns</NavLink>
+            <NavLink to="/returns">Returns</NavLink>
           </li>
           <li>
-            <NavLink to="/">Shipping</NavLink>
+            <NavLink to="/delivery">Delivery</NavLink>
           </li>
         </ul>
       </div>

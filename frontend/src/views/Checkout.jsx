@@ -22,7 +22,7 @@ class Checkout extends Component {
     alertType: "",
     alertMessage: "",
     paymentMethod: "creditCard",
-    shippingPrice: 300,
+    shippingPrice: 1,
     usedDeliveryOption: 1,
     makeOrder: false,
     correctCardInfo: false,
@@ -109,11 +109,16 @@ class Checkout extends Component {
     );
 
     if (getPromoCode.length > 0) {
+      console.log(getPromoCode[0]);
       this.props.setPromoCodeProp(getPromoCode[0]);
       this.setState({
         showAlert: true,
         alertType: "alert-success",
-        alertMessage: `The promo code you entered has given you a ${getPromoCode[0].percentage}% discount on the total price.`,
+        alertMessage: `The promo code you entered has given you a ${
+          getPromoCode[0].value.includes("%")
+            ? String(getPromoCode[0].value) + " discount"
+            : String(getPromoCode[0].value) + " off"
+        } on the total price.`,
       });
     } else {
       this.setState({
@@ -196,10 +201,21 @@ class Checkout extends Component {
     );
     let vatPercentage = this.props.vatProps > 0 ? this.props.vatProps / 100 : 0;
     let vat = productTotals > 0 ? Math.round(productTotals * vatPercentage) : 0;
-    let percentageDiscount = this.props.usedPromoCodeProp
-      ? this.props.usedPromoCodeProp.percentage / 100
-      : 0;
-    let discountAmount = productTotals * percentageDiscount;
+
+    let percentageDiscount = 0;
+    let fixedDiscount = 0;
+    let discountAmount = 0;
+
+    if (this.props.usedPromoCodeProp) {
+      if (this.props.usedPromoCodeProp.value.includes("%")){
+        percentageDiscount = parseInt(this.props.usedPromoCodeProp.value.split("%")[0])
+        discountAmount = productTotals * (percentageDiscount / 100)
+      } else{
+        fixedDiscount = parseInt(this.props.usedPromoCodeProp.value.split("£")[1])
+        discountAmount = fixedDiscount
+      }
+    }
+
     let shoppingTotal =
       productTotals > 0
         ? productTotals + vat + shippingPrice - discountAmount
