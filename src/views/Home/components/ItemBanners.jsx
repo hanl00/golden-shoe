@@ -19,14 +19,14 @@ const ItemBanners = () => {
       image: women_banner,
       title: "Women",
       text: `Limited Offer`,
-      link: "/category/kids",
+      link: "/category/women",
       percentage: "30",
     },
     {
       image: sale_banner,
       title: "Clearance",
       text: `All must go`,
-      link: "/category/kids",
+      link: "/sale",
       percentage: "75",
     },
   ];

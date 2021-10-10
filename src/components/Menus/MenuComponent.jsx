@@ -8,7 +8,6 @@ const MenuComponent = (props) => {
             <MenuItem linkTo={'/all'}>All</MenuItem>
             <MenuItem linkTo={'/category/men'}>Men</MenuItem>
             <MenuItem linkTo={'/category/women'}>Women</MenuItem>
-            <MenuItem linkTo={'/category/kids'}>Kids</MenuItem>
             <MenuItem linkTo={'/sale'}>Sale</MenuItem>
             <MenuItem linkTo={'/cart'}>
                 Cart <span className="badge badge-light">{props.cartCount}</span>
