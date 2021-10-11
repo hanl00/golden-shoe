@@ -109,7 +109,6 @@ class Checkout extends Component {
     );
 
     if (getPromoCode.length > 0) {
-      console.log(getPromoCode[0]);
       this.props.setPromoCodeProp(getPromoCode[0]);
       this.setState({
         showAlert: true,
