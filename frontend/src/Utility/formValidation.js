@@ -1,4 +1,4 @@
-export default function (identifier, value) {
+export default function formValidator (identifier, value) {
 
     let isValid = true;
     let errMsg = '';
