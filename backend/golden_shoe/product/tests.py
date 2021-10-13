@@ -10,7 +10,8 @@ from django.utils.datetime_safe import date
 from rest_framework import status
 from rest_framework.test import APITestCase
 
-from utils.factories.product import ShoeFactory
+from utils.factories.product import ShoeFactory, SizeFactory
+
 
 class TestProductViewSet(APITestCase):
     def setUp(self):
