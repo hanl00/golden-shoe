@@ -21,6 +21,12 @@ $ python manage.py migrate
 $ python manage.py runserver
 ```
 
+Run test
+```bash
+$ python manage.py test
+
+```
+Create new superuser
 superuser 
 - user - admin
 - email - admin@goldenshoe.com
