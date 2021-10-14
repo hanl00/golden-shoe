@@ -10,6 +10,10 @@ This is a mock ecommerce shop for Golden Shoe
 * make request to backend (only fetching products so far)
 * testing
 
+## Lauching the app
+* Backend - check Readme.md
+* Frontend - `npm install`, followed by `npm start`
+
 ## Future work:
 * more backend support (discount codes, delivery status)
 * more testing, especially on backend
