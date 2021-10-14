@@ -17,10 +17,10 @@ const Banner = () => {
     <div className="container main-banner-container my-4">
       <div className="main-banner-content">
         <div className="main-banner-text">
-          <h4 className="display-4 main-banner-title">{bannerItem.title}</h4>
+          <h4 data-testid="banner-title" className="display-4 main-banner-title">{bannerItem.title}</h4>
           <p className="lead">{bannerItem.text}</p>
           <p>
-            <NavLink className="btn btn-primary btn-lg" to={bannerItem.link} exact>
+            <NavLink data-testid="banner-link" className="btn btn-primary btn-lg" to={bannerItem.link} exact>
               Shop Now
             </NavLink>
           </p>

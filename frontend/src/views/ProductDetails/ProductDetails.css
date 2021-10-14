@@ -116,4 +116,8 @@
 
 .size-modal {
   margin-top: 1em;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #808080;
+  border-width: thin;
 }

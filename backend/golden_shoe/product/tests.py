@@ -1,16 +1,10 @@
 from django.test import TestCase
-import datetime
-import pathlib
-from decimal import Decimal
-from unittest import skip
-from unittest.mock import patch, MagicMock
 
 from django.urls import reverse
-from django.utils.datetime_safe import date
 from rest_framework import status
 from rest_framework.test import APITestCase
 
-from utils.factories.product import ShoeFactory, SizeFactory
+from utils.factories.product import ShoeFactory
 
 
 class TestProductViewSet(APITestCase):

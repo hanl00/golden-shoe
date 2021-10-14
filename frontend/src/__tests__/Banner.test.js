@@ -1,14 +1,15 @@
-import { render, screen, cleanup } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
+import "@testing-library/jest-dom";
 import { BrowserRouter } from "react-router-dom";
 
 import Banner from "../views/Home/components/Banner";
 
-test("should render banner component", () => {
+test("should display banner title", () => {
   render(
     <BrowserRouter>
       <Banner />
     </BrowserRouter>
   );
-  const bannerTitle = screen.getByTestId("display-4 main-banner-title");
-  expect(bannerTitle).toBeInTheDocument();
+  const bannerTitle = screen.getByTestId("banner-title");
+  expect(bannerTitle).toHaveTextContent('2021 Fall Collection');
 });

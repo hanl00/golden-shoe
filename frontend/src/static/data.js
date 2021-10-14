@@ -7,7 +7,7 @@ import men_sports from './../assets/images/shop_images/men/men_sports.jpg'
 import women_sports from './../assets/images/shop_images/women/women_sports.jpg'
 import women_sneakers from './../assets/images/shop_images/women/women_sneakers.jpg'
 import women_sandals from './../assets/images/shop_images/women/women_sandals.jpg'
-import women_heels from './../assets/images/shop_images/women/women_heels.jpg'
+import women_heels from './../assets/images/shop_images/women/women_heels.png'
 
 let data = {
   cart: [],
@@ -112,7 +112,7 @@ let data = {
       img: men_leather,
       options: [],
       environment_friendly_and_ethically_sourced: false,
-      next_day_delivery: true,
+      next_day_delivery: false,
       fall_collection: false,
       ratings: {
         star_ratings: 3.8,
@@ -134,7 +134,7 @@ let data = {
       options: [],
       environment_friendly_and_ethically_sourced: false,
       next_day_delivery: false,
-      fall_collection: true,
+      fall_collection: false,
       ratings: {
         star_ratings: 4.0,
         votes: 130,

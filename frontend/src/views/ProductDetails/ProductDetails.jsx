@@ -228,7 +228,7 @@ class ProductDetails extends Component {
                               ))}
                             </select>
                             <br />
-                            <SizeModal />
+                            <SizeModal className="size-modal" />
                           </span>
                         </div>
                       </>
